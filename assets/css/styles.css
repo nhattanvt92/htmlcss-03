@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-color: #1ebfc1;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* common */
+a {
+    text-decoration: none;
+}
+
+.main-content {
+    margin: 0 auto;
+    width: 1170px;
+    max-width: calc(100% - 48px);
+}
+
+.btn {
+    display: inline-block;
+    min-width: 186px;
+    padding: 26px 20px;
+    text-align: center;
+    background: var(--primary-color);
+    border-radius: 14px;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* ========== Header ========== */
+
+header {
+    position: sticky;
+    background: #def6f5;
+    top: -40px;
+    padding-top: 40px;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+ul {
+    display: flex;
+    /* gap: 40px; */
+}
+
+.navbar a {
+    color: #2f3a3b;
+    font-size: 1.6rem;
+}
+
+.navbar ul a {
+    padding: 0 20px;
+}
+
+.navbar a.active {
+    font-weight: 600;
+}
+
+.btn-sign-in {
+    display: inline-block;
+    padding: 12px 24px;
+}
+
+.btn-action .btn-sign-up {
+    display: inline-block;
+    width: 108px;
+    text-align: center;
+    line-height: normal;
+    font-weight: 600;
+    padding: 12px 0;
+    border-radius: 6px;
+    border: var(--primary-color) solid 1px;
+}
+
+.btn-action a:last-child {
+    color: var(--primary-color);
+}
+
+/* ========== Hero ========== */
+
+.hero {
+    margin-top: 18px;
+    padding: 20px 0 79px 0;
+}
+
+.info .sub-title {
+    color: #767e7e;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.info .title {
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.16;
+    margin-top: 18px;
+}
+
+.info .desc {
+    width: 79%;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    line-height: 1.77;
+    margin-top: 46px;
+}
+
+.hero .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .info {
+    width: 39%;
+}
+
+.hero .action-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 52px;
+}
+
+.hero .circle-btn {
+    width: 62px;
+    height: 62px;
+    text-align: center;
+    border-radius: 50%;
+    border: var(--primary-color) solid 1px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.hero .btn-play {
+    padding: 21px 0 21px 4px;
+}
+
+.hero .img-block {
+    position: relative;
+}
+
+.hero .thumb {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+}
+
+.hero .sticky .schedules {
+    position: absolute;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    left: -62px;
+    bottom: 46px;
+}
+
+.hero .sticky .desc {
+    display: inline-block;
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+.hero .sticky .wrap {
+    padding: 16px 25px 23px 25px;
+}
+
+.sticky .schedules .chart:first-of-type {
+    margin-top: 16px;
+}
+
+.sticky .schedules .chart {
+    width: 74px;
+    height: 6px;
+    background-color: #edf1f5;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+
+.sticky .schedules .chart ~ .chart {
+    margin-top: 12px;
+}
+
+.sticky .schedules .chart .percent {
+    width: var(--percent-chart);
+    height: 100%;
+    background-color: #fb9899;
+    border-radius: 25px;
+}
+
+.sticky .schedules .chart:last-child {
+    width: 26px;
+    margin-top: 16px;
+}
+
+.sticky .course {
+    position: absolute;
+    display: inline-block;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+    top: 149px;
+    left: -40px;
+}
+
+.sticky .course .wrap-course {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 16px 25px;
+}
+
+.sticky .course .desc {
+    width: 55px;
+    text-align: start;
+    margin-left: 16px;
+}
+
+.sticky .course .book {
+    position: relative;
+}
+
+.sticky .course .book::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 4px;
+    background: #fff;
+    left: 4px;
+    bottom: 8px;
+    border-radius: 20px;
+}
+
+.sticky .member {
+    position: absolute;
+    display: inline-block;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+    right: 45px;
+    bottom: 41px;
+}
+
+.sticky .member .wrap-member {
+    padding: 17px 35px;
+}
+
+.sticky .member .avatar-group {
+    display: flex;
+    margin-left: 7px;
+    margin-top: 8px;
+}
+
+.sticky .member .avatar,
+.sticky .member .quantity {
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -7px;
+}
+
+.sticky .member .quantity {
+    background: #1ebfc1;
+}
+
+.sticky .member .quantity p {
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+/* ========== Feature ========== */
+
+.feature {
+}
