@@ -231,7 +231,7 @@ ul {
     margin-top: 16px;
 }
 
-.sticky .course {
+.sticky .sticky-course {
     position: absolute;
     display: inline-block;
     border-radius: 18px;
@@ -241,24 +241,24 @@ ul {
     left: -40px;
 }
 
-.sticky .course .wrap-course {
+.sticky .sticky-course .wrap-course {
     display: flex;
     align-items: center;
     position: relative;
     padding: 16px 25px;
 }
 
-.sticky .course .desc {
+.sticky .sticky-course .desc {
     width: 55px;
     text-align: start;
     margin-left: 16px;
 }
 
-.sticky .course .book {
+.sticky .sticky-course .book {
     position: relative;
 }
 
-.sticky .course .book::after {
+.sticky .sticky-course .book::after {
     position: absolute;
     content: "";
     display: inline-block;
