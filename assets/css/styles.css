@@ -336,9 +336,6 @@ ul {
     justify-content: space-between;
 }
 
-.feature .item {
-}
-
 .feature .item-title {
     margin-top: 26px;
     margin-bottom: 16px;
@@ -363,7 +360,7 @@ ul {
 /* ======== course ========== */
 
 .course {
-    padding-top: 65px;
+    padding: 65px 0 132px;
 }
 
 .course .course-title {
@@ -482,4 +479,99 @@ ul {
     background: #1ebfc1;
     border-radius: 50%;
     margin-right: 8px;
+}
+
+.course .qty {
+    max-width: 862px;
+    display: flex;
+    justify-content: space-between;
+    margin: 265px auto 0;
+}
+
+.course .qty strong {
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 11px;
+}
+
+.course .qty .qty-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ======== Feedback ========= */
+
+.feedback {
+    padding-top: 132px;
+}
+
+.feedback .wrap-feedback {
+}
+
+.feedback .wrap-feedback blockquote {
+    color: #5d6564;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    max-width: 419px;
+    margin-top: 27px;
+}
+
+.feedback .wrap-feedback .icon-quote {
+    margin-top: 37px;
+}
+
+.feedback .wrap-feedback .info-member {
+    display: flex;
+    align-items: center;
+    color: #767e7e;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 33px;
+}
+
+.feedback .wrap-feedback .info-member::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 2px;
+    background: #070707;
+    margin-right: 5px;
+}
+
+.feedback .wrap-feedback .info-member span {
+    color: #070707;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.feedback .action {
+    display: flex;
+    gap: 30px;
+    margin-top: 52px;
+}
+
+.feedback .action .feedback-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #2ac9bf;
+    border-radius: 50%;
+}
+
+.feedback .action img {
+}
+
+.feedback .action {
+}
+
+.feedback .feedback-avatar {
+    display: none;
 }
